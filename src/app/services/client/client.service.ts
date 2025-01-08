@@ -7,7 +7,7 @@ import {RegisterUserDto} from "../../agent/creer-client/creer-client.component";
   providedIn: 'root'
 })
 export class ClientService {
-  private baseUrl = 'http://localhost:8087/api/clients'; // Remplacez par l'URL de votre backend
+  private baseUrl = 'https://userservice-production-c8af.up.railway.app/auth/signup'; // Remplacez par l'URL de votre backend
 
   constructor(private http: HttpClient) {}
 

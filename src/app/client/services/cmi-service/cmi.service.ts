@@ -10,7 +10,7 @@ import {PortefeuilleDto} from "../../model/Portefeuille.model";
   providedIn: 'root'
 })
 export class CmiService {
-  private apiUrl = 'http://localhost:8089/api/cmi';
+  private apiUrl = 'https://cmiservice-production.up.railway.app/api/cmi';
 
   constructor(private http: HttpClient) {}
 

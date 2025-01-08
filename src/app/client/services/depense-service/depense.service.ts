@@ -16,7 +16,7 @@ interface CreateExpenseRequest {
 })
 export class DepenseService {
 
-  private apiUrl = 'http://localhost:8084/depenses_budget/expenses';
+  private apiUrl = 'https://servicedepensesbudget-production.up.railway.app/depenses_budget/expenses';
 
   constructor(private http: HttpClient) {}
 

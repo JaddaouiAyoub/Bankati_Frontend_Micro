@@ -8,7 +8,7 @@ import {PaiementRecurrent} from "../../classes/paiement-recurrent";
 })
 export class PaiementRecurrentService {
 
-  private apiUrl = `http://localhost:8088/api/paiements-recurrents`; // URL de votre backend
+  private apiUrl = `https://servicepaiementrecurrent-production.up.railway.app/api/paiements-recurrents`; // URL de votre backend
 
   constructor(private http: HttpClient) {}
 

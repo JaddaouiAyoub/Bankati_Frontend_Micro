@@ -27,7 +27,7 @@ export class LoginComponent {
 
   onSubmit() {
     if (this.loginForm.valid) {
-      this.http.post<LoginResponse>('http://localhost:8087/auth/login', this.loginForm.value).subscribe({
+      this.http.post<LoginResponse>('https://userservice-production-c8af.up.railway.app/auth/login', this.loginForm.value).subscribe({
         next: (response) => {
           console.log("connected");
           console.log(response);

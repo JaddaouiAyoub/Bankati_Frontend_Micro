@@ -8,7 +8,7 @@ import {CarteVirtuelleDTO} from "../../classes/carte-virtuelle";
 })
 export class PaiementCarteService {
 
-  private apiUrl = 'http://localhost:8082/api/cartes-virtuelles';  // Change the base URL as needed
+  private apiUrl = 'https://servicecartesvirtuelles-production.up.railway.app/api/cartes-virtuelles';  // Change the base URL as needed
 
 
   constructor(private http: HttpClient) { }

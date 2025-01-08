@@ -14,7 +14,7 @@ export class PortefeuilleService {
 
   private portefeuilleActif = new BehaviorSubject<PortefeuilleDto | null>(null); // Le portefeuille actif
   // portefeuilleActif$ = this.portefeuilleActif.asObservable();
-  private apiUrl = 'http://localhost:8086/api/portefeuilles'; // L'URL de ton backend Spring Boot
+  private apiUrl = 'https://serviceportefeuilles-production.up.railway.app/api/portefeuilles'; // L'URL de ton backend Spring Boot
   // private portefeuilleActif = new BehaviorSubject<PortefeuilleDto | null>(
   //   JSON.parse(localStorage.getItem('portefeuilleActif') || 'null')
   // );

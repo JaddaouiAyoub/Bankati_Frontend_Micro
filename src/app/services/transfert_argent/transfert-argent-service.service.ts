@@ -7,7 +7,7 @@ import {Observable} from "rxjs";
 })
 export class TransfertArgentService {
 
-  private baseUrl = 'http://localhost:8086/api/portefeuilles';
+  private baseUrl = 'https://serviceportefeuilles-production.up.railway.app/api/portefeuilles';
 
   constructor(private http: HttpClient) {}
 
