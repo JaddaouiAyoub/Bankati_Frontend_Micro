@@ -9,7 +9,7 @@ import {Transaction} from "../../classes/transaction/transaction";
 })
 export class CartesVirtuellesService {
 
-  private apiUrl = 'https://servicecartesvirtuelles-production.up.railway.app/';
+  private apiUrl = 'https://servicecartesvirtuelles-production.up.railway.app';
 
   constructor(private http: HttpClient) {}
 
