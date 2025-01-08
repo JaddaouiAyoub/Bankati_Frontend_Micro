@@ -1,0 +1,45 @@
+<app-navbar></app-navbar>
+
+
+
+<section class="cards-style1">
+  <div class="container">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-xl-4">
+        <app-sidebar></app-sidebar>
+      </div>
+      <div class="col-xl-8 order-box-1">
+        <div class="cards-style1__content">
+          <div class="row">
+            <!--Start Single Cards Box-->
+            <div class="col-xl-12 col-lg-6 col-md-6">
+              <div class="single-cards-box">
+                <div class="inner-title">
+                  <h3>Portefeuille Actif</h3>
+                </div>
+                <div class="text-box">
+                  <p><strong>Devise :</strong> {{ portefeuilleActif?.devise }}</p>
+                  <p><strong>Solde :</strong> {{ portefeuilleActif?.balance | number: '1.2-2' }} {{ portefeuilleActif?.devise }}</p>
+                  <p><strong>Nombre de Dépenses :</strong> {{ getExpenseCount() }}</p>
+                  <p><strong>Total des Dépenses :</strong> {{ getTotalExpenses() | number: '1.2-2' }} {{ portefeuilleActif?.devise }}</p>
+                </div>
+
+                <div class="btn-box">
+                  <a class="btn-one" routerLink="/client/paiement-MultiDevise">
+                    <span class="txt">
+                      Transférer des fonds
+                      <i class="icon-Vector"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--End Single Cards Box-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

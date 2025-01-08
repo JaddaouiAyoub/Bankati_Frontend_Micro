@@ -1,0 +1,36 @@
+                    <div class="card-pages-link" style="width: 80%; margin-right: 0;">
+                        <ul>
+                            <li class="active">
+                              <div *ngIf="portefeuilleActif">
+                                <a (click)="togglePortefeuilles($event)">
+                                  Solde : {{ portefeuilleActif?.balance | number:'1.2-2' }}
+                                  {{ portefeuilleActif?.devise}}
+                                </a>
+                              </div>
+                            </li>
+                            <li (click)="setActiveItem('portefeuilles')" [class.active]="activeItem === 'portefeuilles'" class="portefeuilles-container">
+                                <a  >
+                                    Mes Portefeuilles <span class="icon-next2"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" routerLink="/client/mes-cartes-virtuelles">
+                                    Mes Cartes Virtuelles <span class="icon-next2"></span>
+                                </a>
+                            </li>
+                          <li>
+                                <a href="client/depenses">
+                                    Mes Dépenses <span class="icon-next2"></span>
+                                </a>
+                          </li>
+                            <li>
+                                <a href="" routerLink="/client/paiements_recurrents">
+                                    Paiements Recurrents <span class="icon-next2"></span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--End Card Pages Link-->
+
+
