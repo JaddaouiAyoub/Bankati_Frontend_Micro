@@ -1,5 +1,5 @@
-# Utilisez l'image de base officielle d'Angular
-FROM node:16 AS build
+# Utilisez une version récente de l'image Node.js
+FROM node:18 AS build
 
 # Réglez le répertoire de travail
 WORKDIR /app
